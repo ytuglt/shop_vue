@@ -7,10 +7,18 @@ import 'element-ui/lib/theme-chalk/index.css'
 
 import App from './App.vue'
 
-// import router from './router'
+import router from './router'
+
+import './permission'
+
+Vue.use(ElementUI,{
+    size:Cookies.get('size') || 'medium'
+})
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+    el:"#app",
+    router,
+    render: h=>h(App)
+})
