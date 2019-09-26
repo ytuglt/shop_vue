@@ -20,6 +20,26 @@
 
 </script>
 
-<style>
+<style type="text/scss" lang="scss" scoped>
+$bg:#2d3a4b;
+$dark_gray:#889aa4;
+$light_gray:#eee;
 
+.login-container {
+    min-height: 100%;
+    width: 100%;
+    background-color: $bg;
+    overflow: hidden;
+
+    .title-container {
+        position: relative;
+
+        .title {
+            text-align: center;
+            font-size: 26px;
+            color: $light_gray;
+        }
+
+    }
+}
 </style>
